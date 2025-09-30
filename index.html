@@ -3,14 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard de Tráfego (Teste)</title>
+    <title>Dashboard de Tráfego</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Dashboard de Análise de Tráfego de Servidor</h1>
-    
-    <div class="chart-container">
-        <canvas id="trafficChart"></canvas>
+
+    <div id="overview-view">
+        <h2>Visão Geral por Cliente</h2>
+        <div class="chart-container">
+            <canvas id="overviewChart"></canvas>
+        </div>
+    </div>
+
+    <div id="drilldown-view" class="hidden">
+        <div class="header">
+            <h2 id="drilldown-title">Detalhes do Cliente</h2>
+            <button id="backButton">← Voltar para Visão Geral</button>
+        </div>
+        <div class="drilldown-content">
+            <div class="chart-container-small">
+                <canvas id="protocolChart"></canvas>
+            </div>
+            <div class="info-panel">
+                <h3>Resumo do Tráfego</h3>
+                <p><strong>Cliente IP:</strong> <span id="info-ip"></span></p>
+                <p><strong>Tráfego Total:</strong> <span id="info-total"></span> bytes</p>
+                <p><strong>Entrada (IN):</strong> <span id="info-in"></span> bytes</p>
+                <p><strong>Saída (OUT):</strong> <span id="info-out"></span> bytes</p>
+                <h4>Protocolos Utilizados:</h4>
+                <ul id="protocol-list"></ul>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
