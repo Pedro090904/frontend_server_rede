@@ -16,5 +16,12 @@ const backButton = document.getElementById('backButton');
 
 # Variáveis de estado 
 
+// --- Variáveis de Estado ---
+let lastApiData = {};
+let overviewChart, protocolChart;
+
+1. let lastApiData cria um objetio vazio para conter os dados recentes da API 
+2. let overviewChart, procolChart instancia duas variáveis de uma vez sem valor inicial, mas guardando instâncias gráficas. No caso da overviewChart guardando o gráfico princial e a protocolChart guardando o gráfico do protocolo
+   
 
 
