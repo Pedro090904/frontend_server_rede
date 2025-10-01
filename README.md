@@ -14,3 +14,7 @@ const backButton = document.getElementById('backButton');
 3. A variável  drilldownView refere-se a tela detalhada, sendo ela uma função nativa do Javascript e atribuindo o elemento ao atributo "id = drilldown-view "
 4. A variável backButton refere-se ao botão de voltar
 
+# Variáveis de estado 
+
+
+
