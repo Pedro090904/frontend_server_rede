@@ -1,4 +1,4 @@
-const API_URL = 'http://127.0.0.1:5000/api/traffic';
+const API_URL = 'http://192.168.1.201:5000/api/traffic';
 
 // --- Elementos do DOM ---
 const overviewView = document.getElementById('overview-view');
