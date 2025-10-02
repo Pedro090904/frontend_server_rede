@@ -33,3 +33,20 @@ function showView(viewName) {
 1. A função showView recebe como parâmetro o viewName e tem como objetivo mostrar a tela podendo ser ela a tela principal "overView" ou a tela detalahda " drilldown"
    1.1 
 
+## Referindo-se ao arquivo "style.css"
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+1. A função body define o visual da página.
+2. A fonte é padrão **Arial**
+3. Cores: Cor do fundo (**background-color: #f4f4f9;**) e a cor do texto é escuro para facilitar a leitura (**color: #333;**).
+4. As margin e o padding, estão ajustados para não escostar nas bordas.
+
+
